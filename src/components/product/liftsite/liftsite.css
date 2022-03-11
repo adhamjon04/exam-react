@@ -1,0 +1,33 @@
+.leftsite {
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.left-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #474747;
+}
+.left-text {
+  width: 350px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #474747;
+}
+.explore-list {
+  display: flex;
+}
+.arrow-link {
+  margin-left: 20px;
+  margin-top: 14px;
+}
+.social-list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+.social-item {
+  margin-right: 24px;
+}

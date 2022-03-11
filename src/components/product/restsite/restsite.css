@@ -1,0 +1,43 @@
+.restsite {
+  width: 100%;
+  margin-right: 50px;
+}
+.user-title {
+  margin-bottom: 50px;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #474747;
+}
+.user-item {
+  width: 700px;
+  padding-top: 36px;
+  padding-bottom: 50px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #474747;
+}
+.user-text {
+  margin: 0px;
+  width: 500px;
+}
+.user-date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+.user-time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+.rest-link {
+  list-style-type: none;
+  text-decoration: none;
+  color: #474747;
+}
