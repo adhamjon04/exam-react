@@ -1,10 +1,8 @@
 header {
-  width: 100%;
+  max-width: 100%;
   margin-top: 0px;
   background: #fff;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   list-style-type: none;
 }
 .logo-link {
@@ -34,9 +32,10 @@ header {
   text-align: center;
   justify-content: space-between;
   list-style-type: none;
+  margin-right: 250px;
 }
 .nav-item {
-  margin-right: 40px;
+  margin-right: 100px;
 }
 .nav-link {
   text-decoration: none;
@@ -47,16 +46,20 @@ header {
 .nav-link:active {
   color: #000000;
 }
+.input {
+  margin-left: 800px;
+  margin-top: -38px;
+}
 
 .nav-input {
   border: #f4f4f4;
   background: #f4f4f4;
   border-radius: 3px;
-  width: 200px;
+  width: 280px;
   height: 30px;
   padding: 5px;
   margin-top: -7px;
-  margin-left: 100px;
+  left: 200px;
 }
 .nav-loop {
   margin-top: -7px;
@@ -64,4 +67,102 @@ header {
   position: absolute;
   background: #ffba9d;
   padding: 12px;
+}
+.header-btn {
+  display: none;
+}
+
+/*Resposive mobile*/
+
+@media only screen and (max-width: 376px) {
+  .logo-img {
+    width: 25px;
+    height: 25px;
+  }
+  .name {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 14.3377px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .navbar {
+    margin-top: 5px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-display: row;
+  }
+  .nav-list {
+    margin-top: 70px;
+    margin-left: -340px;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 100px;
+  }
+  .lists {
+    display: flex;
+  }
+
+  .input {
+    width: 300px;
+    margin-left: -250px;
+    margin-top: 80px;
+  }
+  .nav-item {
+    margin-right: 0px;
+    padding-bottom: 40px;
+    height: 20px;
+  }
+  .nav li {
+    margin: 0px;
+  }
+  .header-btn {
+    position: absolute;
+    margin-top: 35px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 11px;
+    border: none;
+    background: none;
+  }
+
+  .toggle {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 28px;
+    height: 2.5px;
+    background-color: #000000;
+  }
+  .toggle::before {
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    content: "";
+    background-color: #000000;
+  }
+  .toggle::after {
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    content: "";
+    background-color: #000000;
+  }
 }

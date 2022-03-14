@@ -1,5 +1,5 @@
 .leftsite {
-  width: 30%;
+  max-width: 30%;
   margin-left: 50px;
   margin-top: 100px;
 }
@@ -10,7 +10,7 @@
   color: #474747;
 }
 .left-text {
-  width: 350px;
+  max-width: 500px;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -30,4 +30,36 @@
 }
 .social-item {
   margin-right: 24px;
+}
+
+/*Responsive liftsite...*/
+
+@media only screen and (max-width: 376px) {
+  .leftsite {
+    margin-left: 50px;
+    margin-top: 2450px;
+    margin-bottom: 0px;
+  }
+  .left-title {
+    width: 136px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #474747;
+  }
+  .left-text {
+    width: 310px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #474747;
+  }
+  .explore-list {
+    display: flex;
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .social-list {
+    display: none;
+  }
 }

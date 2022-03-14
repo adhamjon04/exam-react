@@ -1,5 +1,5 @@
 @import "./assets/normalize/normalize.css";
 @import "./assets/fonts/fonts.css";
 html {
-  height: 0px;
+  height: 100%;
 }

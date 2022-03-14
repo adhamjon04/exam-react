@@ -11,6 +11,7 @@ import Product from './components/product/product';
 import Upage from './components/product/UI/ui';
 import Uxpage from './components/product/UX/ux';
 import Typography from './components/product/typography/typog';
+import Errors from './components/product/error/error';
 
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path='/all' element={ <Product /> }/>
+        <Route path='/' element={ <Product /> }/>
         <Route path='/design' element={ <Design /> }/>
         <Route path='/ux' element={ <Uxpage /> }/>
         <Route path='/ui' element={ <Upage /> }/>
         <Route path='/typog' element={ <Typography /> }/>
         <Route path='/post/:userId' element={ <Postpage /> }/>
-        
+        <Route path='/err' element={< Errors />} />
       </Routes>
       <Footer />
     </div>

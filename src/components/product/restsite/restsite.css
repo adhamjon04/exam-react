@@ -1,6 +1,10 @@
 .restsite {
   width: 100%;
   margin-right: 50px;
+  margin-top: 90px;
+}
+.user-list-rest {
+  padding-bottom: 40px;
 }
 .user-title {
   margin-bottom: 50px;
@@ -11,8 +15,7 @@
   color: #474747;
 }
 .user-item {
-  width: 700px;
-  padding-top: 36px;
+  max-width: 700px;
   padding-bottom: 50px;
   list-style-type: none;
   font-weight: 400;
@@ -22,7 +25,7 @@
 }
 .user-text {
   margin: 0px;
-  width: 500px;
+  max-width: 500px;
 }
 .user-date {
   font-weight: 400;
@@ -40,4 +43,56 @@
   list-style-type: none;
   text-decoration: none;
   color: #474747;
+}
+.render-number {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 50px;
+}
+.render-number li {
+  padding: 10px;
+  cursor: pointer;
+}
+.render-number li.active {
+  background-color: #ffba9d;
+  color: #fff;
+}
+.render-number li button {
+  background-color: transparent;
+  border: none;
+  color: #777777;
+  font-size: 14px;
+  cursor: pointer;
+}
+.render-number li button:hover {
+  background-color: #777777;
+  color: #fff;
+}
+.render-number li button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 376px) {
+  .restsite {
+    width: 100%;
+    margin-left: -170px;
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  .user-item {
+    max-width: 500px;
+    padding-bottom: 50px;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #474747;
+  }
+  .user-text {
+    margin: 0px;
+    width: 320px;
+  }
+  .user-list-rest {
+    padding-bottom: 0px;
+  }
 }

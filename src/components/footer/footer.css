@@ -45,3 +45,45 @@
 .underline {
   text-decoration-line: underline;
 }
+
+/*Responsive footer mobile..*/
+
+@media only screen and (max-width: 376px) {
+  .footer {
+    width: 376px;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    bottom: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 25px;
+    margin-right: 150px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-name {
+    margin: 0px;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 14.3377px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .footer-item {
+    margin-right: 100px;
+  }
+}

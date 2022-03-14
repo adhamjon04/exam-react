@@ -13,9 +13,9 @@ function Footer() {
         <div className='footer'>
             <Link to={'/'} className='logo'>
                 <div>
-                    <img src={Footerimg} alt="" />
+                    <img className='logo-img' src={Footerimg} alt="" />
                 </div>
-                <h1 className='footer-name'>Bobur</h1>
+                <h1 className='footer-name'>BoburBlog</h1>
             </Link>
             <ul className='footer-list'>
                 <li className='footer-item'>
@@ -34,7 +34,7 @@ function Footer() {
                     <Link className='footer-link' to={'/all'}><p>Play Market</p></Link>
                     <Link className='footer-link' to={'/all'}><p>App Store</p></Link>
                 </li>
-                <li>
+                <li className='footer-item'>
                     <Link className='footer-link' to={'/all'}><p>Contact</p></Link>
                     <Link className='footer-link underline' to={'/all'}><p>Blog</p></Link>
                     <Link className='footer-link' to={'/all'}><p>Dribbble</p></Link>
