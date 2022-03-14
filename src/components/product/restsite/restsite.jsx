@@ -32,9 +32,9 @@ function Restsite() {
 
 
     const [currentPage, setcurrentPage]=useState([1])
-    const [itemsPerPage, setitemsPerPage]=useState([10])
+    const [itemsPerPage, ]=useState([10])
 
-    const [pageNumberLimit, setpageNumberLimit]=useState(5)
+    const [pageNumberLimit, ]=useState(5)
     const [maxPageNumberLimit, setmaxPageNumberLimit]=useState(5)
     const [minPageNumberLimit, setminPageNumberLimit]=useState(0)
 
@@ -98,11 +98,11 @@ const handlePrevbtn =()=>{
                     {renderData(currentItems)}
                     <ul className='render-number'>
                         <li>
-                            <button onClick={handlePrevbtn}  desabled={currentPage===pages[0]? true:false} >Prev</button>
+                            <button onClick={handlePrevbtn}  desabled={currentPage===pages[0]? 'true':'false'} >Prev</button>
                         </li>
                     {renderPageNumber}
                     <li>
-                        <button onClick={handleNextbtn} desabled={currentPage===pages[pages.length-1]?true:false} >Next</button>
+                        <button onClick={handleNextbtn} desabled={currentPage===pages[pages.length-1]? 'true' :'false'} >Next</button>
                     </li>
                     </ul>
            
